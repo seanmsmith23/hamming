@@ -1,18 +1,17 @@
 require_relative "testing_library"
 
-test_one = "A"
-test_two = "A"
-
 def hamming(strand_1, strand_2)
   first = strand_1.split(//)
   second = strand_2.split(//)
+
   x = 0
   y = 0
 
   while y < first.count && y < second.count
     if first[y] == second[y]
       x += 0
-    else x += 1
+    else
+      x += 1
     end
     y += 1
   end
